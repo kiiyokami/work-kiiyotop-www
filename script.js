@@ -1,4 +1,4 @@
-const btn = document.querySelector('.discord-btn')
+const btn = document.querySelector('.discord__btn')
 const tooltip = document.getElementById('discord-tooltip')
 
 btn.addEventListener('click', () => {
