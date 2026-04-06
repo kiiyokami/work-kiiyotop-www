@@ -22,7 +22,7 @@
 
     <!-- Nav -->
     <nav>
-      <span class="logo">~/andrei</span>
+      <span class="logo">andrei@kiiyo:~$</span>
       <div class="socials">
         <!-- GitHub -->
         <a href="https://github.com/kiiyokami" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="nav__link">
@@ -43,7 +43,7 @@
     <header class="hero">
       <p class="hey">hey, I'm</p>
       <h1>Andrei Togni</h1>
-      <p class="bio">Junior software developer based in Naga. I build backend systems, automate things that shouldn't be manual, and occasionally break prod.</p>
+      <p class="bio">Backend and infrastructure engineer based in Naga. Building memory-safe systems in Rust, wrangling cloud infrastructure on AWS, and automating things that shouldn't be manual.</p>
       <div class="contact">
         <a href="mailto:andreitogni@gmail.com" class="contact__link">andreitogni@gmail.com</a>
         <span class="contact__sep">/</span>
@@ -106,6 +106,156 @@
             </div>
           </a>
 
+          <div class="project__card project__card--featured">
+            <div class="card__top">
+              <span class="card__title">secure-hybrid-cloud-gateway</span>
+              <span class="card__badge">infra</span>
+            </div>
+            <p class="card__desc">Edge gateway that tunnels on-premise services through a DigitalOcean Droplet via WireGuard, bypassing ISP-grade NAT with iptables hardening and SSL termination.</p>
+            <div class="tags">
+              <span class="tag">wireguard</span>
+              <span class="tag">iptables</span>
+              <span class="tag">linux</span>
+              <span class="tag">digitalocean</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section">
+        <h2 class="section__label">where i've worked</h2>
+        <div class="timeline">
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__body">
+              <div class="timeline__header">
+                <div>
+                  <span class="timeline__role">Rust Developer</span>
+                  <span class="timeline__company">@ Tekkio</span>
+                </div>
+                <span class="timeline__date">Dec 2025 – Present</span>
+              </div>
+              <ul class="timeline__list">
+                <li>Designing and implementing internal APIs and memory-safe libraries in Rust, focused on zero-cost abstractions and long-term maintainability.</li>
+                <li>Architecting scalable backend services and establishing shared coding conventions across a cross-functional team.</li>
+                <li>Operating entirely within a Fedora Linux environment — toolchains, dependencies, and system config managed from the CLI.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__body">
+              <div class="timeline__header">
+                <div>
+                  <span class="timeline__role">Packaged App Development Associate</span>
+                  <span class="timeline__company">@ Accenture</span>
+                </div>
+                <span class="timeline__date">Jul 2024 – Dec 2025</span>
+              </div>
+              <ul class="timeline__list">
+                <li>Monitored 5–9 AWS Step Functions workflows and Lambda functions in production, investigating anomalies and coordinating incident escalation.</li>
+                <li>Resolved an average of 10–15 support tickets per week via Jira, maintaining SLA compliance and clear documentation.</li>
+                <li>Contributed to cloud-native development across the Agile delivery cycle with AWS Lambda, CloudWatch, and Amazon Connect.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__body">
+              <div class="timeline__header">
+                <div>
+                  <span class="timeline__role">QA Intern</span>
+                  <span class="timeline__company">@ Investa</span>
+                </div>
+                <span class="timeline__date">May – Aug 2023</span>
+              </div>
+              <ul class="timeline__list">
+                <li>Executed manual and automated test suites across web and mobile environments using Selenium and Cypress.</li>
+                <li>Tracked defects through the full bug lifecycle and contributed to test case planning in an Agile team.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section">
+        <h2 class="section__label">what i work with</h2>
+        <div class="skills">
+          <div class="skill__group">
+            <span class="skill__group-label">languages</span>
+            <div class="tags">
+              <span class="tag tag--lang">rust</span>
+              <span class="tag tag--lang">typescript</span>
+              <span class="tag tag--lang">javascript</span>
+              <span class="tag tag--lang">python</span>
+<span class="tag tag--lang">bash</span>
+              <span class="tag tag--lang">sql</span>
+            </div>
+          </div>
+          <div class="skill__group">
+            <span class="skill__group-label">infra &amp; devops</span>
+            <div class="tags">
+              <span class="tag">linux</span>
+              <span class="tag">docker</span>
+              <span class="tag">wireguard</span>
+              <span class="tag">iptables</span>
+              <span class="tag">reverse proxies</span>
+              <span class="tag">git</span>
+              <span class="tag">ci/cd</span>
+              <span class="tag">digitalocean</span>
+            </div>
+          </div>
+          <div class="skill__group">
+            <span class="skill__group-label">cloud &amp; observability</span>
+            <div class="tags">
+              <span class="tag">aws lambda</span>
+              <span class="tag">step functions</span>
+              <span class="tag">cloudwatch</span>
+              <span class="tag">s3</span>
+              <span class="tag">amazon connect</span>
+            </div>
+          </div>
+          <div class="skill__group">
+            <span class="skill__group-label">testing &amp; tooling</span>
+            <div class="tags">
+              <span class="tag">selenium</span>
+              <span class="tag">cypress</span>
+              <span class="tag">jira</span>
+              <span class="tag">servicenow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section">
+        <h2 class="section__label">certifications</h2>
+        <div class="cert__grid">
+          <div class="cert__card">
+            <div class="cert__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 1 0-.1-9.999 5.002 5.002 0 0 0-9.78 2.096A4.001 4.001 0 0 0 3 15z"/></svg>
+            </div>
+            <div class="cert__info">
+              <span class="cert__name">AWS Certified Developer – Associate</span>
+              <span class="cert__issuer">Amazon Web Services</span>
+            </div>
+          </div>
+          <div class="cert__card">
+            <div class="cert__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 1 0-.1-9.999 5.002 5.002 0 0 0-9.78 2.096A4.001 4.001 0 0 0 3 15z"/></svg>
+            </div>
+            <div class="cert__info">
+              <span class="cert__name">AWS Certified Cloud Practitioner</span>
+              <span class="cert__issuer">Amazon Web Services</span>
+            </div>
+          </div>
         </div>
       </section>
 
