@@ -43,7 +43,7 @@
     <header class="hero">
       <p class="hey">hey, I'm</p>
       <h1>Andrei Togni</h1>
-      <p class="bio">Backend and infrastructure engineer based in Naga. Building memory-safe systems in Rust, wrangling cloud infrastructure on AWS, and automating things that shouldn't be manual.</p>
+      <p class="bio">Software Engineer.</p>
       <div class="contact">
         <a href="mailto:andreitogni@gmail.com" class="contact__link">andreitogni@gmail.com</a>
         <span class="contact__sep">/</span>
@@ -53,73 +53,53 @@
 
     <main>
 
-      <!-- Projects -->
+      <!-- Skills -->
       <section class="section">
-        <h2 class="section__label">things i've built</h2>
-        <div class="project__grid">
-
-          <a href="https://github.com/kiiyokami/cebupacific_webscraper" target="_blank" rel="noopener noreferrer" class="project__card">
-            <div class="card__top">
-              <span class="card__title">cebupacific-webscraper</span>
-              <span class="arrow">↗</span>
-            </div>
-            <p class="card__desc">Scrapes Cebu Pacific flight data to find the cheapest fares over a 6-month window.</p>
+        <h2 class="section__label">what i work with</h2>
+        <div class="skills">
+          <div class="skill__group">
+            <span class="skill__group-label">languages</span>
             <div class="tags">
-              <span class="tag">python</span>
-              <span class="tag">selenium</span>
+              <span class="tag tag--lang">rust</span>
+              <span class="tag tag--lang">typescript</span>
+              <span class="tag tag--lang">javascript</span>
+              <span class="tag tag--lang">python</span>
+              <span class="tag tag--lang">bash</span>
+              <span class="tag tag--lang">sql</span>
             </div>
-          </a>
-
-          <a href="https://github.com/kiiyokami/reddit-job-scraper" target="_blank" rel="noopener noreferrer" class="project__card">
-            <div class="card__top">
-              <span class="card__title">reddit-job-scraper</span>
-              <span class="arrow">↗</span>
-            </div>
-            <p class="card__desc">Fetches job listings from Reddit, filters by keywords, and forwards to a Discord webhook.</p>
+          </div>
+          <div class="skill__group">
+            <span class="skill__group-label">infra &amp; devops</span>
             <div class="tags">
-              <span class="tag">typescript</span>
-              <span class="tag">aws</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/kiiyokami/boilerplate-creator" target="_blank" rel="noopener noreferrer" class="project__card">
-            <div class="card__top">
-              <span class="card__title">boilerplate-creator</span>
-              <span class="arrow">↗</span>
-            </div>
-            <p class="card__desc">CLI that scaffolds new projects by prompting for a type and language, then pulling starter templates.</p>
-            <div class="tags">
-              <span class="tag">bash</span>
               <span class="tag">linux</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/kiiyokami/bem-checker" target="_blank" rel="noopener noreferrer" class="project__card">
-            <div class="card__top">
-              <span class="card__title">bem-checker</span>
-              <span class="arrow">↗</span>
-            </div>
-            <p class="card__desc">Client-side BEM linter. Drop a project folder and it scans your CSS and HTML for naming violations instantly — no server, no uploads.</p>
-            <div class="tags">
-              <span class="tag">javascript</span>
-              <span class="tag">css</span>
-            </div>
-          </a>
-
-          <div class="project__card project__card--featured">
-            <div class="card__top">
-              <span class="card__title">secure-hybrid-cloud-gateway</span>
-              <span class="card__badge">infra</span>
-            </div>
-            <p class="card__desc">Edge gateway that tunnels on-premise services through a DigitalOcean Droplet via WireGuard, bypassing ISP-grade NAT with iptables hardening and SSL termination.</p>
-            <div class="tags">
+              <span class="tag">docker</span>
               <span class="tag">wireguard</span>
               <span class="tag">iptables</span>
-              <span class="tag">linux</span>
+              <span class="tag">reverse proxies</span>
+              <span class="tag">git</span>
+              <span class="tag">ci/cd</span>
               <span class="tag">digitalocean</span>
             </div>
           </div>
-
+          <div class="skill__group">
+            <span class="skill__group-label">cloud &amp; observability</span>
+            <div class="tags">
+              <span class="tag">aws lambda</span>
+              <span class="tag">step functions</span>
+              <span class="tag">cloudwatch</span>
+              <span class="tag">s3</span>
+              <span class="tag">amazon connect</span>
+            </div>
+          </div>
+          <div class="skill__group">
+            <span class="skill__group-label">testing &amp; tooling</span>
+            <div class="tags">
+              <span class="tag">selenium</span>
+              <span class="tag">cypress</span>
+              <span class="tag">jira</span>
+              <span class="tag">servicenow</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -184,53 +164,37 @@
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Projects -->
       <section class="section">
-        <h2 class="section__label">what i work with</h2>
-        <div class="skills">
-          <div class="skill__group">
-            <span class="skill__group-label">languages</span>
-            <div class="tags">
-              <span class="tag tag--lang">rust</span>
-              <span class="tag tag--lang">typescript</span>
-              <span class="tag tag--lang">javascript</span>
-              <span class="tag tag--lang">python</span>
-<span class="tag tag--lang">bash</span>
-              <span class="tag tag--lang">sql</span>
+        <h2 class="section__label">things i've built</h2>
+        <div class="project__grid">
+
+          <a href="https://github.com/kiiyokami/bem-checker" target="_blank" rel="noopener noreferrer" class="project__card">
+            <div class="card__top">
+              <span class="card__title">bem-checker</span>
+              <span class="arrow">↗</span>
             </div>
-          </div>
-          <div class="skill__group">
-            <span class="skill__group-label">infra &amp; devops</span>
+            <p class="card__desc">Client-side BEM linter. Drop a project folder and it scans your CSS and HTML for naming violations instantly — no server, no uploads.</p>
             <div class="tags">
-              <span class="tag">linux</span>
-              <span class="tag">docker</span>
+              <span class="tag">javascript</span>
+              <span class="tag">css</span>
+            </div>
+          </a>
+
+          <div class="project__card project__card--featured">
+            <div class="card__top">
+              <span class="card__title">secure-hybrid-cloud-gateway</span>
+              <span class="card__badge">infra</span>
+            </div>
+            <p class="card__desc">Edge gateway that tunnels on-premise services through a DigitalOcean Droplet via WireGuard, bypassing ISP-grade NAT with iptables hardening and SSL termination.</p>
+            <div class="tags">
               <span class="tag">wireguard</span>
               <span class="tag">iptables</span>
-              <span class="tag">reverse proxies</span>
-              <span class="tag">git</span>
-              <span class="tag">ci/cd</span>
+              <span class="tag">linux</span>
               <span class="tag">digitalocean</span>
             </div>
           </div>
-          <div class="skill__group">
-            <span class="skill__group-label">cloud &amp; observability</span>
-            <div class="tags">
-              <span class="tag">aws lambda</span>
-              <span class="tag">step functions</span>
-              <span class="tag">cloudwatch</span>
-              <span class="tag">s3</span>
-              <span class="tag">amazon connect</span>
-            </div>
-          </div>
-          <div class="skill__group">
-            <span class="skill__group-label">testing &amp; tooling</span>
-            <div class="tags">
-              <span class="tag">selenium</span>
-              <span class="tag">cypress</span>
-              <span class="tag">jira</span>
-              <span class="tag">servicenow</span>
-            </div>
-          </div>
+
         </div>
       </section>
 
