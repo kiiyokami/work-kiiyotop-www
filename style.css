@@ -62,9 +62,13 @@ body::after {
 .content {
   position: relative;
   z-index: 1;
-  max-width: 52rem;
+  max-width: 72rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
+}
+
+@media (max-width: 560px) {
+  .content { padding: 0 1.5rem; }
 }
 
 /* ── Nav ── */
