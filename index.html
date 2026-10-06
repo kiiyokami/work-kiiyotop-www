@@ -8,98 +8,130 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
 
-    <header class="intro">
-      <h1>Andrei Togni</h1>
-      <p class="role">Software Engineer</p>
-      <p class="summary">I build backend services and infrastructure in Rust. Previously supported production AWS workloads at Accenture.</p>
-      <ul class="links">
-        <li><a href="mailto:andreitogni@gmail.com">andreitogni@gmail.com</a></li>
-        <li><a href="tel:+639283214829">+63 928 321 4829</a></li>
+    <nav class="nav">
+      <a class="mark" href="/" aria-label="Andrei Togni, home">AT</a>
+      <ul>
         <li><a href="https://github.com/kiiyokami" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         <li><a href="https://linkedin.com/in/abtogni" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a></li>
+        <li><a href="https://www.boot.dev/u/kiiyokami" target="_blank" rel="noopener noreferrer">Boot.dev</a></li>
       </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="name">
+        <span class="name__line"><span>Andrei</span></span>
+        <span class="name__line name__line--indent"><span>Togni</span></span>
+      </h1>
+      <div class="hero__foot">
+        <div>
+          <p class="lede">Software engineer building backend services and infrastructure in Rust.</p>
+          <div class="actions">
+            <a class="btn" href="mailto:andreitogni@gmail.com">Email me</a>
+            <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+          </div>
+        </div>
+        <dl class="now">
+          <dt>Now</dt>
+          <dd>Rust Developer at Tekkio</dd>
+          <dd>Freelance Minecraft world building and server administration</dd>
+        </dl>
+      </div>
     </header>
 
     <main>
 
       <section class="section" id="experience">
         <h2>Experience</h2>
-        <div class="section__body">
+        <ol class="timeline">
 
-          <article class="entry">
-            <div class="entry__head">
-              <h3>Minecraft World Builder and Server Administrator <span class="entry__org">Freelance</span></h3>
-              <p class="date">Aug 2026 - Present</p>
-            </div>
+          <li class="job job--current">
+            <p class="job__date">Aug 2026 - Present</p>
+            <h3>Minecraft World Builder and Server Administrator</h3>
+            <p class="job__org">Freelance</p>
             <ul>
               <li>Build custom worlds and set up and administer Minecraft servers for clients.</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="entry">
-            <div class="entry__head">
-              <h3>Rust Developer <span class="entry__org">at Tekkio</span></h3>
-              <p class="date">Dec 2025 - Present</p>
-            </div>
+          <li class="job job--current">
+            <p class="job__date">Dec 2025 - Present</p>
+            <h3>Rust Developer</h3>
+            <p class="job__org">Tekkio</p>
             <ul>
               <li>Design and implement internal APIs and libraries in Rust, with a focus on safety and long-term maintainability.</li>
               <li>Build backend services and set shared coding conventions across a cross-functional team.</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="entry">
-            <div class="entry__head">
-              <h3>Packaged App Development Associate <span class="entry__org">at Accenture</span></h3>
-              <p class="date">Jul 2024 - Dec 2025</p>
-            </div>
+          <li class="job">
+            <p class="job__date">Jul 2024 - Dec 2025</p>
+            <h3>Packaged App Development Associate</h3>
+            <p class="job__org">Accenture</p>
             <ul>
               <li>Monitored production AWS Step Functions workflows and Lambda functions, investigating anomalies and escalating incidents.</li>
               <li>Resolved 10-15 support tickets per week in Jira while meeting SLA targets and keeping documentation current.</li>
               <li>Developed cloud-native features with AWS Lambda, CloudWatch, and Amazon Connect across the Agile delivery cycle.</li>
             </ul>
-          </article>
+          </li>
 
-          <article class="entry">
-            <div class="entry__head">
-              <h3>QA Intern <span class="entry__org">at Investa</span></h3>
-              <p class="date">May 2023 - Aug 2023</p>
-            </div>
+          <li class="job">
+            <p class="job__date">May 2023 - Aug 2023</p>
+            <h3>QA Intern</h3>
+            <p class="job__org">Investa</p>
             <ul>
               <li>Ran manual and automated test suites for web and mobile using Selenium and Cypress.</li>
               <li>Tracked defects through the full bug lifecycle and contributed to test planning.</li>
             </ul>
-          </article>
+          </li>
 
-        </div>
+        </ol>
       </section>
 
       <section class="section" id="projects">
         <h2>Projects</h2>
-        <div class="section__body">
+        <div class="projects">
 
-          <article class="entry">
-            <h3><a href="https://github.com/kiiyokami/serverctl" target="_blank" rel="noopener noreferrer">serverctl</a></h3>
-            <p>Discord bot for running self-hosted Minecraft servers on k3s. Starts, stops, and configures servers through slash commands, shuts down idle instances, and routes public traffic through a WireGuard tunnel.</p>
-            <p class="stack">Rust, Kubernetes, WireGuard, Discord API</p>
+          <article class="project">
+            <div class="project__text">
+              <h3><a href="https://github.com/kiiyokami/serverctl" target="_blank" rel="noopener noreferrer">serverctl</a></h3>
+              <p>Discord bot for running self-hosted Minecraft servers on k3s. Starts, stops, and configures servers through slash commands, shuts down idle instances, and routes public traffic through a WireGuard tunnel.</p>
+              <p class="stack">Rust, Kubernetes, WireGuard, Discord API</p>
+            </div>
+            <ol class="flow" aria-label="How player traffic reaches a server">
+              <li>Player</li>
+              <li>Public VPS<small>Entry point</small></li>
+              <li>WireGuard<small>Encrypted tunnel</small></li>
+              <li>k3s cluster<small>Managed by serverctl</small></li>
+              <li>Minecraft server</li>
+            </ol>
           </article>
 
-          <article class="entry">
-            <h3>secure-hybrid-cloud-gateway</h3>
-            <p>Edge gateway that exposes on-premise services through a DigitalOcean Droplet over WireGuard, working around carrier-grade NAT. Includes iptables hardening and TLS termination.</p>
-            <p class="stack">WireGuard, iptables, Linux, DigitalOcean</p>
+          <article class="project">
+            <div class="project__text">
+              <h3>secure-hybrid-cloud-gateway</h3>
+              <p>Edge gateway that exposes on-premise services through a DigitalOcean Droplet over WireGuard, working around carrier-grade NAT. Includes iptables hardening and TLS termination.</p>
+              <p class="stack">WireGuard, iptables, Linux, DigitalOcean</p>
+            </div>
+            <ol class="flow" aria-label="How requests reach on-premise services">
+              <li>Internet</li>
+              <li>Droplet<small>TLS, iptables</small></li>
+              <li>WireGuard<small>Through the NAT</small></li>
+              <li>On-premise services</li>
+            </ol>
           </article>
 
-          <article class="entry">
-            <h3><a href="https://github.com/kiiyokami/bem-checker" target="_blank" rel="noopener noreferrer">bem-checker</a></h3>
-            <p>Browser-based BEM linter. Select a project folder and it reports naming violations in your HTML and CSS. Runs entirely client-side.</p>
-            <p class="stack">JavaScript, CSS</p>
+          <article class="project">
+            <div class="project__text">
+              <h3><a href="https://nihon.kiiyo.top" target="_blank" rel="noopener noreferrer">nihon</a></h3>
+              <p>Study notes for Minna no Nihongo with lessons, flashcards, quizzes, and a kana chart. Installable as an app.</p>
+              <p class="stack">SvelteKit</p>
+            </div>
           </article>
 
         </div>
@@ -107,17 +139,26 @@
 
       <section class="section" id="skills">
         <h2>Skills</h2>
-        <dl class="section__body skills">
-          <div><dt>Languages</dt><dd>Rust, TypeScript, JavaScript, Python, Bash, SQL</dd></div>
-          <div><dt>Infrastructure</dt><dd>Linux, Docker, Kubernetes, WireGuard, iptables, reverse proxies, Git, CI/CD, DigitalOcean</dd></div>
-          <div><dt>AWS</dt><dd>Lambda, Step Functions, CloudWatch, S3, Amazon Connect</dd></div>
-          <div><dt>Testing and tools</dt><dd>Selenium, Cypress, Jira, ServiceNow</dd></div>
-        </dl>
-      </section>
-
-      <section class="section" id="certifications">
-        <h2>Certifications</h2>
-        <ul class="section__body certs">
+        <div class="skills">
+          <div>
+            <h3>Languages</h3>
+            <ul><li>Rust</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Bash</li><li>SQL</li></ul>
+          </div>
+          <div>
+            <h3>Infrastructure</h3>
+            <ul><li>Linux</li><li>Docker</li><li>Kubernetes</li><li>WireGuard</li><li>iptables</li><li>Reverse proxies</li><li>Git, CI/CD</li><li>DigitalOcean</li></ul>
+          </div>
+          <div>
+            <h3>AWS</h3>
+            <ul><li>Lambda</li><li>Step Functions</li><li>CloudWatch</li><li>S3</li><li>Amazon Connect</li></ul>
+          </div>
+          <div>
+            <h3>Testing and tools</h3>
+            <ul><li>Selenium</li><li>Cypress</li><li>Jira</li><li>ServiceNow</li></ul>
+          </div>
+        </div>
+        <h3 class="certs__title">Certifications</h3>
+        <ul class="certs">
           <li>AWS Certified Developer - Associate</li>
           <li>AWS Certified Cloud Practitioner</li>
         </ul>
@@ -125,7 +166,11 @@
 
     </main>
 
-    <footer class="footer">© 2026 Andrei Togni</footer>
+    <footer class="footer">
+      <a href="mailto:andreitogni@gmail.com">andreitogni@gmail.com</a>
+      <a href="tel:+639283214829">+63 928 321 4829</a>
+      <span>© 2026 Andrei Togni</span>
+    </footer>
 
   </div>
 </body>

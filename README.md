@@ -5,7 +5,7 @@ Personal site and project dump. Vanilla HTML, CSS, and JS — no frameworks, no 
 ## Stack
 
 - HTML / CSS / JS
-- [Geist](https://vercel.com/font) and Geist Mono via Google Fonts
+- [Archivo](https://fonts.google.com/specimen/Archivo) via Google Fonts
 - Served with nginx
 
 ## Structure
