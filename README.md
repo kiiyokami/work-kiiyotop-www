@@ -5,7 +5,7 @@ Personal site and project dump. Vanilla HTML, CSS, and JS — no frameworks, no 
 ## Stack
 
 - HTML / CSS / JS
-- [Victor Mono](https://rubjo.github.io/victor-mono/) via Google Fonts
+- [Geist](https://vercel.com/font) and Geist Mono via Google Fonts
 - Served with nginx
 
 ## Structure
@@ -13,7 +13,6 @@ Personal site and project dump. Vanilla HTML, CSS, and JS — no frameworks, no 
 ```
 index.html   — markup
 style.css    — all styles
-script.js    — discord tag copy-to-clipboard
 favicon.svg  — site icon
 ```
 
